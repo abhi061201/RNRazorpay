@@ -58,7 +58,7 @@ const SectionListExample = () => {
           showsVerticalScrollIndicator={false}
           keyExtractor={(item, index) => item + index}
           renderItem={renderComp}
-          renderSectionHeader={stickyHeaderComponent}></SectionList>
+          renderSectionHeader={stickyHeaderComponent} />
       </View>
     </SafeAreaView>
   );

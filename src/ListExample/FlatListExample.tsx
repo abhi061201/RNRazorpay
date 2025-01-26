@@ -200,9 +200,9 @@ const FlatListExample = () => {
   function renderComp({item}: {item: ListItem}) {
     switch (item.id) {
       case 'child1':
-        return <Child1></Child1>;
+        return <Child1 />;
       default:
-        return <Child2></Child2>;
+        return <Child2 />;
     }
   }
   return (
@@ -224,7 +224,7 @@ const FlatListExample = () => {
           })}
           windowSize={21}
           renderItem={renderComp}
-          keyExtractor={(item, index) => item.in + index}></FlatList>
+          keyExtractor={(item, index) => item.in + index} />
       </View>
     </SafeAreaView>
   );

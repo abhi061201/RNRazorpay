@@ -32,7 +32,7 @@ const PaymentGateway = () => {
   return (
     <View style={styles.container}>
       <Text>PaymentGateway</Text>
-      <Button title="Pay $10" onPress={payment}></Button>
+      <Button title="Pay $10" onPress={payment} />
     </View>
   );
 };

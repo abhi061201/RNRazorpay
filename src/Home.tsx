@@ -40,8 +40,9 @@ const Home = () => {
         title="Click"
         onPress={() => {
           navigation.navigate('Screen1');
-        }}></Button>
-      <Button title="Click" onPress={renderFunction}></Button>
+        }}
+      />
+      <Button title="Click" onPress={renderFunction} />
     </View>
   );
 };
