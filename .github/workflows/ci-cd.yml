@@ -27,6 +27,8 @@ jobs:
 
       - name: Lint Code
         run: npm run lint
+      - name: Generate autolinking config
+        run: npx react-native autolink
 
       #   - name: Run Tests
       #     run: npm test
