@@ -20,20 +20,17 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Install Dependencies
         run: npm install
 
       - name: Lint Code
         run: npm run lint
-      - name: Generate autolinking config
-        run: npx react-native autolink
 
-      #   - name: Run Tests
-      #     run: npm test
-      #   - name: Set Gradlew Permissions
-      #     run: chmod +x ./gradlew
+      # # Ensure gradlew has executable permissions
+      # - name: Set Gradlew Permissions
+      #   run: chmod +x ./android/gradlew
 
       - name: Build Android APK
         run: |
